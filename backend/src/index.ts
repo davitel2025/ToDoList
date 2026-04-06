@@ -14,7 +14,9 @@ connectToDb();
 app.use(express.json());
 
 //Connect to React
-app.use(cors({origin: 'http//localhost:5173'}));
+app.use(cors({
+  origin: 'http://localhost:5173'
+}));
 
 const PORT = process.env.PORT_ENV
 
